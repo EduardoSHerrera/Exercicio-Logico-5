@@ -11,14 +11,15 @@ namespace logica_5
         static void Main(string[] args)
         {
 
-            int cont;
-            cont = 0;
-            while (cont < 100)
+            int i, num;
+            for(i = 1; i <= 100; i++)
             {
 
-                cont++;
-                cont++;
-                Console.WriteLine(cont);
+                num = i % 2;
+                if (num % 2 == 0)
+                {
+                    Console.WriteLine("numero par: " + i);
+                }
 
             }
 
